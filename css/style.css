@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+/* Podcast 3 */
+.podcast-3{
+  display: flex;
+  justify-content: center;
+  width: 87%;
+  margin: auto;
+}
+
+/* Podcast Content */
+.podcast-3 .podcast-3-content{
+  padding-left: 50px;
+}
+/* Podcast Content title*/
+.podcast-3 .podcast-3-content h1{
+  font-size: 3vw;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: -13px;
+  color: white;
+}
+
+/* Podcast Podcaster */
+.podcast-3 .podcast-3-content h5{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1vw;
+  margin-bottom: -2px;
+  color: white;
+}
+
+/* Podcast Podcaster Description */
+.podcast-3 .podcast-3-content p{
+  font-family: 'Poppins light', sans-serif;
+  line-height: 25px;
+  font-size: 11px;
+  width: 65%;
+  color: white;
+}
+
+/* Podcasts Images */
+.podcast-3 .podcast-3-image{
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 10px 30px black;
+}
+
+/* ################### Forms For Inputs ####################### */
+/* Group Of All Inputs */
+.centerrr{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.inputs{
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+@media (max-width:800px) {
+  .inputs{
+    width: 90%;
+  }
+}
+
+/* Inputs Properties */
+.inputs input{
+  margin: 10px auto;
+  border: none;
+  color: white;
+  width: 80%;
+  background: none;
+  background-color: #2c2a27;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-family: "Poppins";
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  box-shadow: 0 10px 30px black;
+
+}
+.inputs input:focus{
+  outline: none;
+}
+::placeholder {
+  font-family: "Poppins";
+  letter-spacing: 2px;
+}
+/* Button */
+.submit{
+  padding: 12px;
+  width: 150px;
+  border: none;
+  cursor: pointer;
+  margin: 10px auto;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-family: "Poppins";
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  box-shadow: 0 10px 30px black;
+  color: #2c2a27;
+  background-color: #979834;
+  transition: 0.6s;
+}
+.submit:hover{
+  color: #979834;
+  background-color: #2c2a27;
+  cursor: pointer;
+}
+
+.submit:focus{
+  display:none ;
+}
+.inputs-group-3{
+  display: flex;
+  justify-content: center;
+}
+/* ################### Create New Element ####################### */
+/* New Element */
+.newElement{
+  width: 33.33%;
+  border: 1px solid white;
+}
+
+/* Image For New Element */
+.newElement img{
+    width: 100%;
+}
+
+/* Title and Podcaster For New Element */
+.newElement .title{
+    position: relative;
+    margin: 0px;
+    text-align: center;
+    color: #fdcb6e;
+}
+
+/* Duration For New Element */
+.newElement .duration{
+  margin-left: 10px;
+  color: #636e72;
+}
+
+/* Time For New Element */
+.newElement .time{
+  float: right;
+  margin-right: 10px;
+  color: #636e72;
+}
+
+/* Description For New Element */
+.newElement .description{
+  text-align: center;
+  color: #b2bec3;
+  font-family: "Poppins";
+}
+
+/* Invtag stands for invite and tag [div contains two p (invite, tag)] */
+.invtag{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+}
+
+.invtag p{
+  color: white;
+}
+
+
+/* Empty div */
+#empty{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#empty .newElement{
+  width: 31%;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/* ################### Audio Podcast ####################### */
+.sliderContainer{
+  display: flex;
+  margin-top: 20px;
+
+  flex-wrap: wrap;
+  background-color: black;
+}
+ .partie1{
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+
+}
+h1{
+  margin-bottom: -2px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+span{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  color: white;
+}
+
+.partie2{
+  text-align: center;
+  flex-basis: 60%;
+}
+.fa{
+   padding: 13px;
+   color: white;
+
+}
+.fa-volume-up{
+  color: white;
+}
+
+#playButton{
+  font-size: 30px;
+}
+
+.slider{
+  width: 600px;
+  height: 10px;
+  -webkit-appearance: none;
+  background: white;
+  outline: none;
+  border-radius: 12px;
+}
+
+.slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  background: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.partie3{
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partie3 input{
+  width: 150px;
+}
+
+/* Desscription */
+#des{
+  color: white;
+}
+
+/* New Podcasts */
+#newPodcasts{
+  display: flex;
+  flex-direction: column;
+}
+
+#newPodcasts div{
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #383634;
+}
+#newPodcasts div:hover{
+  background-color: black;
+}
+
+#newPodcasts div h2{
+  color: white;
+}

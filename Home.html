@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>THE BOMB NETWORK PODCAST</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script type="text/javascript" src="js/Add-podcast.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <center>
+        <img src="img/logo.png" alt="" width="200px">
+        </center>
+        <ul>
+          <li><a class="current" href="Home.html">HOME</a></li>
+          <li>
+            <div class="dropdown">
+              <a href="">PODCASTS</a>
+              <div class="dropdown-content">
+                <a href="joe.html">JOE ROGAN</a>
+                <a href="mfceo.html">THE MFCEO</a>
+                <a href="thetime.html">TIM FERRISS</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="https://www.patreon.com/zniti" target="_blank">DONATE</a></li>
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+    </header>
+    <div class="container">
+      <img class="bomb" src="img/asset.png" width="70%">
+      <div class="initpodcasts" id="data">
+         <div class="pod1 podall" style="background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(68, 69, 28, 0.73)),url(img/JOEROGAN.jpg);">
+          <a href="joe.html"><div class="gradient">
+            <div class="text">
+              <h3>THE JOE ROGAN EXPERIENCE</h3>
+              <p>Category : COMEDY</p>
+              <p>Joe Rogan</p>
+            </div>
+          </div></a>
+        </div>
+        <div class="pod2 podall" style="background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(68, 69, 28, 0.73)),url(img/MFCEO.png);">
+          <a href="mfceo.html"><div class="gradient">
+            <div class="text">
+              <h3>THE MFCEO PROJECT PODCAST</h3>
+              <p>Category : BUSINESS</p>
+              <p>Andy Frisella</p>
+            </div>
+          </div></a>
+        </div>
+        <div class="pod3 podall" style="background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(68, 69, 28, 0.73)),url(img/TimFerriss.png);">
+          <a href="thetime.html"><div class="gradient">
+            <div class="text">
+              <h3>THE TIM FERRISS SHOW</h3>
+              <p>Category : BUSINESS</p>
+              <p>Tim Ferriss</p>
+            </div>
+          </div></a>
+        </div>
+      </div>
+      <img class="bomb" src="img/pitch.png" width="70%">
+      <div class="inputs">
+        <input type="text" id="name" placeholder="PODCAST NAME">
+        <input type="text" id="owner" placeholder="OWNER">
+        <input type="text" id="category" placeholder="CATEGORY">
+        <input type="text" id="link" placeholder="IMAGE LINK">
+        <input type="button" id="submit" value="SUBMIT" onclick="display()">
+      </div>
+
+    </div>
+    <footer>
+      <p>Powered by TeamAnas.inc</p>
+      <p>All Rights Reserved ©</p>
+    </footer>
+
+
+  </body>
+</html>

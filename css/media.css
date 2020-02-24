@@ -1,0 +1,78 @@
+ /* Small devices (600px and down) */
+@media (max-width: 600px) { 
+    .podcast-3 .podcast-3-content p{
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .podcast-3 .podcast-3-content h1{
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .podcast-3 .podcast-3-content h5{
+        text-align: center;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    /* Empty Element */
+    #empty .newElement{
+        width: 100%;
+    }
+ }
+
+/* medium devices (992px and down up to 600px) */
+@media (max-width: 878px) { 
+    .podcast-3, .podcast-3 .podcast-3-content{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .podcast-3 .podcast-3-image{
+        display: flex;
+        margin: 0px;
+    }
+    .podcast-3 .podcast-3-content p{
+        width: 70%;
+        text-align: center;
+        font-size: 11px;
+    }
+    .podcast-3 .podcast-3-content h5{
+        text-align: center;
+        font-size: 10px;
+    }
+ }
+/* Audio Podcast Media */
+
+@media (max-width: 900px) {
+    /* body{
+      overflow: hidden ;
+    } */
+
+    .partie1{
+        flex-basis: 50%;
+        order: 1;
+    }
+
+    .partie2{
+        flex-basis: 100%;
+        order: 0;
+    }
+    .partie2 #myRange{
+        width: 100%;
+    }
+
+    .partie3{
+        flex-basis: 50%;
+        order: 1;
+    }
+
+
+  }

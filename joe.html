@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Podcast | THE JOE ROGAN EXPERIENCE</title>
+        <link rel="shortcut icon" href="img/logo.png">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    </head>
+    <body>
+        <!-- Nav bar -->
+        <header>
+            <center>
+              <img src="img/logo.png" alt="logo" width="200px">
+            </center>
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li>
+                  <div class="dropdown">
+                    <a href="#">PODCASTS</a>
+                    <div class="dropdown-content">
+                      <a class="current" href="joe.html">JOE ROGAN</a>
+                      <a href="mfceo.html">THE MFCEO</a>
+                      <a href="thetime.html">TIM FERRISS</a>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="https://www.patreon.com/zniti" target="_blank">DONATE</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </header>
+
+        <!-- Podcast -->
+        <div class="podcast-3">
+            <div class="podcast-3-opacity">
+                <img class="podcast-3-image" src="img/JOEROGAN.jpg" alt="">
+            </div>
+            <div class="podcast-3-content">
+                <h1>THE JOE ROGAN EXPERIENCE</h1>
+                <h5>By Joe Rogan </h5>
+                <p>The Joe Rogan Experience podcast is a long form conversation hosted by comedian Joe Rogan with friends and guests that have included comedians, actors, musicians, MMA fighters, authors, artists, and beyond.
+                </p>
+            </div>
+        </div>
+
+        <!-- New Podcasts -->
+        <div id="newPodcasts">
+          <div id="newPodcast-1" onclick="newPodcast1()">
+            <h2>JRE MMA Show #91 with Radio Rahim</h2>
+          </div>
+          <div id="newPodcast-2" onclick="newPodcast2()">
+            <h2>JRE MMA Show #90 with Rashad Evans</h2>
+          </div>
+        </div>
+
+        <!-- Forms For Inputs -->
+
+        <div class="centerrr">
+          <h1>ADD AN EPISODE</h1>
+
+        <div class="inputs">
+
+            <input type="test" id="launch" placeholder="Subtitle">
+            <!-- <input type="test" id="date" placeholder="l'heure et la date d'ajout"> -->
+            <input type="test" id="episode" placeholder="le nom de l'épisode | title">
+
+
+
+            <input type="test" id="description" placeholder="la description de l'épisode">
+            <input type="test" id="morceau" placeholder="le lien du morceau">
+            <!-- <input type="test" id="tags" placeholder="les tags associés"> -->
+
+
+        </div>
+        </div>
+
+        <!-- Inputs Group 3 -->
+        <div class="inputs-group-3">
+          <!-- <input type="test" id="invite" placeholder="Les invités"> -->
+          <button class="submit" onclick="newElement()">Submit</button>
+        </div>
+
+        <!-- Description -->
+        <h4 style="text-align: center;" id="des">description</h4>
+
+
+        <!-- For Audio Podcast -->
+        <div class="sliderContainer">
+          <div class="partie1">
+              <h1 id="title">None</h1>
+              <p id="singer">None None</p>
+          </div>
+
+          <div class="partie2">
+            <div class="btn">
+              <i id="prevButton" class="fa fa-step-backward" onclick="previous()"></i>
+              <i id="playButton" onclick="checkPlay()" class="fa fa-play"></i>
+              <i id="nexBtton" class="fa fa-step-forward" onclick="next()"></i>
+            </div>
+            <span id="startTime">00:00</span>
+            <input type="range"min="1" max="100" value="1" id="myRange" class="slider">
+            <span id="elapsedTime">00:00</span>
+          </div>
+
+          <div class="partie3">
+            <i id="volume" class="fa fa-volume-up"></i>
+            <input onmousemove="setvolume()" type="range" min="1" max="100" value="1" id="rangeVolume" class="slider">
+          </div>
+      </div>
+
+        <!-- Scripts For Import Only -->
+        <script src="js/podcast.js"></script>
+    </body>
+</html>
