@@ -97,7 +97,7 @@ class Queue{
         if(!this.bottom){
             // let front and rear and bottom points to the new node
             this.front = this.rear = this.bottom = new Node(data, title, singer, description);
-            console.log("Data: " + data);
+            // console.log("Data: " + data);
             return;
         }
         // create temp and store rear in it
@@ -381,6 +381,11 @@ function newElement(){
 
     // Add New Created div to the 
     pdiv.appendChild(div);
+
+    // Store pdiv in json file
+    let rad = require("fs");
+    let read = rad.writeFileSync("test.json", "utf-8");
+    console.log("File: " + read);
 
     // Add new Element to double linked list
     qu.enqueue(morceau.value, episode.value, launch.value, des.value);
