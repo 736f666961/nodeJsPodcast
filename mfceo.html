@@ -16,14 +16,14 @@
               <img src="img/logo.png" alt="logo" width="200px">
             </center>
             <ul>
-                <li><a href="Home.html">HOME</a></li>
+                <li><a href="/Home">HOME</a></li>
                 <li>
                   <div class="dropdown">
                     <a href="#">PODCASTS</a>
                     <div class="dropdown-content">
-                      <a href="joe.html">JOE ROGAN</a>
-                      <a class="current" href="mfceo.html">THE MFCEO</a>
-                      <a href="thetime.html">TIM FERRISS</a>
+                      <a href="/joe">JOE ROGAN</a>
+                      <a class="current" href="/mfceo">THE MFCEO</a>
+                      <a href="/thetime">TIM FERRISS</a>
                     </div>
                   </div>
                 </li>
@@ -54,35 +54,28 @@
           </div>
         </div>
 
-              <!-- Forms For Inputs -->
-              <div class="centerrr">
-                <h1>ADD AN EPISODE</h1>
+        <!-- Forms For Inputs -->
+        <div class="centerrr">
+          <h1>ADD AN EPISODE</h1>
 
-              <div class="inputs">
-
-                  <input type="test" id="launch" placeholder="Subtitle">
-                  <!-- <input type="test" id="date" placeholder="l'heure et la date d'ajout"> -->
-                  <input type="test" id="episode" placeholder="le nom de l'épisode | title">
-
-
-
-                  <input type="test" id="description" placeholder="la description de l'épisode">
-                  <input type="test" id="morceau" placeholder="le lien du morceau">
-                  <!-- <input type="test" id="tags" placeholder="les tags associés"> -->
-
-
-              </div>
-              </div>
+          <form action="/contact" method="POST" class="inputs">
+            <input type="test" name="subtitle" id="launch" placeholder="Subtitle">
+            <input type="test" name="title" id="episode" placeholder="le nom de l'épisode | title">
+            <input type="test" name="description" id="description" placeholder="la description de l'épisode">
+            <input type="test" name="morceau" id="morceau" placeholder="le lien du morceau">
+        
 
               <!-- Inputs Group 3 -->
-              <div class="inputs-group-3">
-                <!-- <input type="test" id="invite" placeholder="Les invités"> -->
-                <button class="submit" onclick="newElement()">Submit</button>
-              </div>
+            <div class="inputs-group-3">
+              <button class="submit" onclick="newElement()">Submit</button>
+            </div>
 
-              <!-- Description -->
-              <h4 style="text-align: center;" id="des">description</h4>
+          </form>
 
+        </div>
+
+        <!-- Description -->
+        <h4 style="text-align: center;" id="des">description</h4>
 
         <!-- For Audio Podcast -->
         <div class="sliderContainer">

@@ -365,32 +365,27 @@ function newElement(){
 
     // ############ Create elemenets ############
 
-    // Get DIv Element
-    let pdiv = document.getElementById("newPodcasts");
+    if(morceau.value.length > 0 && episode.value.length && launch.value.length > 0 && des.value.length > 0){
+        // Get Div Element
+        let pdiv = document.getElementById("newPodcasts");
 
-    // Create New Podcast
-    let div = document.createElement("div");
+        // Create New Podcast
+        let div = document.createElement("div");
 
-    // Create h2
-    let h2 = document.createElement("h2");
-    div.appendChild(h2);
-    
-    // Create text for h2
-    let h2Text = document.createTextNode(episode.value + " - " + launch.value);
-    h2.appendChild(h2Text);
+        // Create h2
+        let h2 = document.createElement("h2");
+        div.appendChild(h2);
+        
+        // Create text for h2
+        let h2Text = document.createTextNode(episode.value + " - " + launch.value);
+        h2.appendChild(h2Text);
 
-    // Add New Created div to the 
-    pdiv.appendChild(div);
+        // Add New Created div to the 
+        pdiv.appendChild(div);
 
-    // Store pdiv in json file
-    let rad = require("fs");
-    let read = rad.writeFileSync("test.json", "utf-8");
-    console.log("File: " + read);
-
-    // Add new Element to double linked list
-    qu.enqueue(morceau.value, episode.value, launch.value, des.value);
-
-    console.log("From Create: " + "Data: " + morceau.value, + " Title: " +  episode.value, + " Subtitle: " + launch.value, + "Descrrition: " + des.value)
-    
-    checkPlay();
+        // Add new Element to double linked list
+        qu.enqueue(morceau.value, episode.value, launch.value, des.value);
+        
+        checkPlay();
+    }
 }
