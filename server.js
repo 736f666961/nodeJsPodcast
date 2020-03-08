@@ -55,39 +55,32 @@ app.get('/thetime', (req, res) => {
 
 app.use(bodyParser.urlencoded({ extended: true })); 
 
+// Store all podcasts
+let podcasts = [];
+
+
 // When User submit
 app.post('/contact', (req, res) => {
-    // Write header of request
-    res.writeHead(200, {"Content-Type":"text/json"});
+    // Get all entries
+    const podcast = {
+        "Subtitle": req.body.subtitle,
+        "Title": req.body.title,
+        "Description": req.body.description
+    };
 
-    // Get data from user as object
-    let data = [];
+    // Add entries to podcasts
+    podcasts.push(podcast);
 
-    // Push entries to data array
+    // Convert entreis to json format
+    res.json(podcasts);
     
-    data.push(req.body.subtitle + req.body.title + req.body.description );
+    // Show all podcasts
+    console.log(podcasts);
 
-    // Convert data object into a string
-    let strData = JSON.stringify(data);
+});
 
-    // append data to file that already created 
-    let fd = fs.openSync('data.json', 'a');
-    // fs.appendFileSync("data.json", '{');
-    fs.appendFile(fd, strData , 'utf8', (err) =>{
-        if (err) console.log(err)
-        console.log("Data appended to file")
-
-    });
-
-    // Read File Data
-    let read = fs.readFileSync("data.json", 'utf8');
-
-    res.write("<h1>" + read.Description + "</h1>");
-
-    console.log(read);
-
-    // read.end(fs.appendFileSync("data.json", '}'));
-
+app.get('/contact', (req, res) => {
+    // res.json(podcasts);
 });
 
 // Listen on port 3000 
